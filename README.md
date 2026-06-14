@@ -8,7 +8,6 @@ Sistem Manajemen Mahasiswa menggunakan:
 - Supabase Database
 - Supabase Authentication
 - JWT Authentication
-- HTML, CSS, JavaScript Frontend
 
 ## Fitur
 
@@ -19,7 +18,6 @@ Sistem Manajemen Mahasiswa menggunakan:
 ✅ Tambah Data Mahasiswa  
 ✅ Update Data Mahasiswa  
 ✅ Hapus Data Mahasiswa  
-✅ Frontend Dashboard Mahasiswa
 
 ---
 
@@ -318,10 +316,6 @@ DELETE /mahasiswa/{id}
 - Supabase
 - JWT
 - Python
-- HTML
-- CSS
-- JavaScript
-- Bootstrap 5
 
 ---
 
