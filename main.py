@@ -5,7 +5,6 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 from pydantic import BaseModel, Field
-from jwt import decode
 import jwt
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
@@ -13,15 +12,6 @@ from fastapi.responses import FileResponse
 # ===== INIT =====
 app = FastAPI(title="API Mahasiswa Supabase")
 security = HTTPBearer()
-app.mount(
-    "/static",
-    StaticFiles(directory="frontend"),
-    name="static"
-)
-
-@app.get("/web")
-def web():
-    return FileResponse("frontend/index.html")
 
 # ===== LOAD ENV =====
 project_root = Path(__file__).resolve().parent
