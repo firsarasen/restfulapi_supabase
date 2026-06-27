@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Food Inventory</title>
+
+<link rel="stylesheet" href="./css/dashboard.css">
+<link rel="stylesheet" href="./css/foods.css">
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+    <h2>🥬 Food Inventory</h2>
+
+    <a href="dashboard.html">Dashboard</a>
+
+    <a class="active" href="foods.html">
+        Bahan Makanan
+    </a>
+
+    <a href="categories.html">
+        Kategori
+    </a>
+
+    <a href="http://localhost:3000/docs" target="_blank">
+        API Docs
+    </a>
+
+    <button id="logoutBtn">
+        Logout
+    </button>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<header class="top-header">
+
+<h1>Bahan Makanan</h1>
+
+<button id="addBtn">
+
++ Tambah Bahan
+
+</button>
+
+</header>
+
+<div class="toolbar">
+
+<input
+type="text"
+id="search"
+placeholder="Cari bahan makanan..."
+>
+
+</div>
+
+<div class="table-box">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Nama</th>
+
+<th>Kategori</th>
+
+<th>Stok</th>
+
+<th>Satuan</th>
+
+<th>Expired</th>
+
+<th>Aksi</th>
+
+</tr>
+
+</thead>
+
+<tbody id="foodTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<!-- Modal -->
+
+<div class="modal" id="foodModal">
+
+<div class="modal-content">
+
+<h2 id="modalTitle">
+
+Tambah Bahan
+
+</h2>
+
+<form id="foodForm">
+
+<input
+type="hidden"
+id="foodId"
+>
+
+<input
+type="text"
+id="name"
+placeholder="Nama Bahan"
+required
+>
+
+<select id="category">
+
+</select>
+
+<input
+type="number"
+id="stock"
+placeholder="Jumlah Stok"
+required
+>
+
+<input
+type="text"
+id="unit"
+placeholder="Satuan"
+required
+>
+
+<input
+type="date"
+id="expired_date"
+>
+
+<textarea
+id="description"
+placeholder="Deskripsi"
+></textarea>
+
+<div class="button-group">
+
+<button type="submit">
+
+Simpan
+
+</button>
+
+<button
+type="button"
+id="closeModal"
+>
+
+Batal
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+<script src="./js/food.js"></script>
+
+</body>
+
+</html>

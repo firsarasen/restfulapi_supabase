@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Categories | Food Inventory</title>
+
+<link rel="stylesheet" href="./css/dashboard.css">
+<link rel="stylesheet" href="./css/categories.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <h2>🥬 Food Inventory</h2>
+
+    <a href="dashboard.html">Dashboard</a>
+
+    <a href="foods.html">Bahan Makanan</a>
+
+    <a class="active" href="categories.html">Kategori</a>
+
+    <a href="http://localhost:3000/docs" target="_blank">
+        API Docs
+    </a>
+
+    <button id="logoutBtn">
+        Logout
+    </button>
+
+</div>
+
+<div class="main">
+
+<div class="top-header">
+
+<h1>Daftar Kategori</h1>
+
+<button id="addCategoryBtn">
++ Tambah Kategori
+</button>
+
+</div>
+
+<div class="toolbar">
+
+<input
+type="text"
+id="searchCategory"
+placeholder="Cari kategori..."
+>
+
+</div>
+
+<div class="table-box">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>No</th>
+
+<th>Nama Kategori</th>
+
+<th>Aksi</th>
+
+</tr>
+
+</thead>
+
+<tbody id="categoryTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<div class="modal" id="categoryModal">
+
+<div class="modal-content">
+
+<h2 id="categoryTitle">
+
+Tambah Kategori
+
+</h2>
+
+<form id="categoryForm">
+
+<input
+type="text"
+id="categoryName"
+placeholder="Nama Kategori"
+required
+>
+
+<div class="button-group">
+
+<button type="submit">
+
+Simpan
+
+</button>
+
+<button type="button" id="closeCategoryModal">
+
+Batal
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+<script src="./js/category.js"></script>
+
+</body>
+
+</html>

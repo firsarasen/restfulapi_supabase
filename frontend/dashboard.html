@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard | Food Inventory</title>
+
+<link rel="stylesheet" href="./css/dashboard.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <h2>🥬 Food Inventory</h2>
+
+    <a class="active" href="dashboard.html">Dashboard</a>
+
+    <a href="foods.html">Bahan Makanan</a>
+
+    <a href="categories.html">Kategori</a>
+
+    <a href="http://localhost:3000/docs" target="_blank">
+        API Docs
+    </a>
+
+    <button id="logoutBtn">
+        Logout
+    </button>
+
+</div>
+
+
+<div class="main">
+
+<header class="dashboard-header">
+
+    <div>
+
+        <h1>Dashboard</h1>
+
+        <p id="welcomeText">
+            Selamat Datang
+        </p>
+
+    </div>
+
+    <div class="user-card">
+
+        <div class="avatar">
+
+            👤
+
+        </div>
+
+        <div>
+
+            <h3 id="userName">-</h3>
+
+            <small id="userEmail">-</small>
+
+        </div>
+
+    </div>
+
+</header>
+
+<div class="cards">
+
+<div class="card green">
+
+<h3>Total Bahan</h3>
+
+<h2 id="totalFoods">0</h2>
+
+</div>
+
+<div class="card blue">
+
+<h3>Kategori</h3>
+
+<h2 id="totalCategories">0</h2>
+
+</div>
+
+<div class="card orange">
+
+<h3>Stok Menipis</h3>
+
+<h2 id="lowStock">0</h2>
+
+</div>
+
+<div class="card red">
+
+<h3>Kedaluwarsa</h3>
+
+<h2 id="expiredFood">0</h2>
+
+</div>
+
+</div>
+
+
+<div class="table-container">
+
+<h2>Bahan Makanan Terbaru</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Nama</th>
+
+<th>Kategori</th>
+
+<th>Stok</th>
+
+<th>Satuan</th>
+
+</tr>
+
+</thead>
+
+<tbody id="foodTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="./js/dashboard.js"></script>
+
+</body>
+
+</html>
